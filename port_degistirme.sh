@@ -21,11 +21,8 @@ BINARY=$(uname -m)
 
 sleep 2
 
-echo " İlk önce ls -a yaparak .node yazan ve degistirmek istediginiz projenin adini basinda nokta olmadan asagiya girin " 
 echo "Proje Adı: "
 read PROJE
-echo " VPS'inizde aktif olan portları buradan inceleyebilirsiniz " 
-lsof -i -P -n | grep LISTEN
 echo "Prox_App Port(Default- 26658) :"
 read PROXY
 echo "Laddr_Port(Default-26657) :"
@@ -56,10 +53,6 @@ echo " "
 
 echo "--------------------------------"
 echo "İşlem başarılı..."
-echo " VPS'inizde aktif olan portlar degismediyse port degistirmek istediginiz node'a manuel olarak restart atin " 
-echo " Ornegin: sudo systemctl restart nibid "
-lsof -i -P -n | grep LISTEN
-
 echo "--------------------------------"
 
 sleep 2
