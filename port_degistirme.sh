@@ -57,30 +57,4 @@ echo "--------------------------------"
 
 sleep 2
 
-sleep 3 
-
-echo " Simdi Değişen Portlar Otomatik Olarak Aktif Ediliyor son olarak y yazıp entera basin "
-sudo apt install -y ufw
-sudo ufw default allow outgoing
-sudo ufw default deny incoming
-sudo ufw allow ssh
-sudo ufw allow 26658
-sudo ufw allow 26657
-sudo ufw allow 6060
-sudo ufw allow 26656
-sudo ufw allow 26660
-sudo ufw allow 9090
-sudo ufw allow 9091
-sudo ufw allow $PROJE
-sudo ufw allow $PROXY
-sudo ufw allow $LADDR
-sudo ufw allow $LADDR2
-sudo ufw allow $PROOF
-sudo ufw allow $PROM
-sudo ufw allow $APP1 
-sudo ufw allow $APP2
-sudo ufw allow $NODE
-sudo ufw enable
-
-sleep 3 
 
